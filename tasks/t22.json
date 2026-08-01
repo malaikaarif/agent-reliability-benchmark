@@ -1,0 +1,11 @@
+{
+  "id": "t22",
+  "type": "file_data",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_file_reader to read 'grades.csv'. Step 2: Find the highest math score. Step 3: Return only the score number.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "92",
+  "checker": "exact_match"
+}

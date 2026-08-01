@@ -1,0 +1,11 @@
+{
+  "id": "t25",
+  "type": "booking_shopping",
+  "length": "short",
+  "instruction": "Use fake_search to find the price of flight UAE12A. Return only the price number.",
+  "tools": [
+    "fake_search"
+  ],
+  "expected": "45000",
+  "checker": "exact_match"
+}

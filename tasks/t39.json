@@ -1,0 +1,11 @@
+{
+  "id": "t39",
+  "type": "team",
+  "length": "short",
+  "instruction": "Writer Agent: Write exactly 'Hello World'. Reviewer Agent: Confirm it is exactly 'Hello World'. Return only the final confirmed text.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "Hello World",
+  "checker": "exact_match"
+}

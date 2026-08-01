@@ -1,0 +1,12 @@
+{
+  "id": "t17",
+  "type": "web_research",
+  "length": "long",
+  "instruction": "Step 1: Use fake_search to find flights from Lahore. Step 2: Count how many flights are found. Step 3: Use fake_search to find flights to Lahore. Step 4: Count how many flights are found. Step 5: Use fake_calculator to add both counts. Return only the total number.",
+  "tools": [
+    "fake_search",
+    "fake_calculator"
+  ],
+  "expected": "2",
+  "checker": "exact_match"
+}

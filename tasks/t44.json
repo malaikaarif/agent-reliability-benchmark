@@ -1,0 +1,11 @@
+{
+  "id": "t44",
+  "type": "team",
+  "length": "medium",
+  "instruction": "Writer Agent: Calculate 100 plus 200. Reviewer Agent: Verify the answer is 300. If correct, return '300'. If wrong, return 'REJECTED'. Return only the final result.",
+  "tools": [
+    "fake_calculator"
+  ],
+  "expected": "300",
+  "checker": "exact_match"
+}

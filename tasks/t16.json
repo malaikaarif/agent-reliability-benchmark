@@ -1,0 +1,11 @@
+{
+  "id": "t16",
+  "type": "web_research",
+  "length": "long",
+  "instruction": "Step 1: Use fake_search to find the capital of Pakistan. Step 2: Use fake_search to find the capital of France. Step 3: Use fake_search to find the capital of Japan. Step 4: Take the first letter of each capital. Step 5: Concatenate them in alphabetical order. Return only the 3-letter result.",
+  "tools": [
+    "fake_search"
+  ],
+  "expected": "IPT",
+  "checker": "exact_match"
+}

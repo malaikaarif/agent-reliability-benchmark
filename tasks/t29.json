@@ -1,0 +1,12 @@
+{
+  "id": "t29",
+  "type": "booking_shopping",
+  "length": "long",
+  "instruction": "Step 1: Use fake_search to find the cheapest flight. Step 2: Extract its code and price. Step 3: Use fake_booking_api to book it. Step 4: Return the result in exact format: 'CODE, PRICE, CONFIRMED' where CONFIRMED is 'YES' if booking succeeded.",
+  "tools": [
+    "fake_search",
+    "fake_booking_api"
+  ],
+  "expected": "PK18B2, 12000, YES",
+  "checker": "exact_match"
+}

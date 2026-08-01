@@ -1,0 +1,11 @@
+{
+  "id": "t47",
+  "type": "team",
+  "length": "long",
+  "instruction": "Writer Agent: Read 'products.csv' and find the product with the highest price. Reviewer Agent: Verify the answer is 'Laptop'. If correct, return 'Laptop'. If wrong, return 'REJECTED'. Return only the final result.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "Laptop",
+  "checker": "exact_match"
+}

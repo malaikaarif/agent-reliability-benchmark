@@ -1,0 +1,11 @@
+{
+  "id": "t14",
+  "type": "web_research",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_search to find the capital of Germany. Step 2: Use fake_search to find the capital of France. Step 3: Use fake_search to find the capital of Japan. Step 4: Sort these three capitals alphabetically. Step 5: Return them separated by commas with one space after each comma.",
+  "tools": [
+    "fake_search"
+  ],
+  "expected": "Berlin, Paris, Tokyo",
+  "checker": "exact_match"
+}

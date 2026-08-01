@@ -1,0 +1,11 @@
+{
+  "id": "t18",
+  "type": "file_data",
+  "length": "short",
+  "instruction": "Use fake_file_reader to read 'budget.txt'. Extract the remaining budget number. Return only the number.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "55000",
+  "checker": "exact_match"
+}

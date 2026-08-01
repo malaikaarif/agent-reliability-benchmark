@@ -1,0 +1,12 @@
+{
+  "id": "t35",
+  "type": "reasoning_math",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_file_reader to read 'employees.csv'. Step 2: Use fake_calculator to find the average salary. Step 3: Use fake_calculator to multiply the average salary by 2. Step 4: Return only the final number.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "137500",
+  "checker": "exact_match"
+}

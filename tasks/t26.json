@@ -1,0 +1,11 @@
+{
+  "id": "t26",
+  "type": "booking_shopping",
+  "length": "short",
+  "instruction": "Use fake_search to find the flight code for Karachi to Lahore on 2026-08-18. Return only the code.",
+  "tools": [
+    "fake_search"
+  ],
+  "expected": "PK18B2",
+  "checker": "exact_match"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "t30",
+  "type": "booking_shopping",
+  "length": "long",
+  "instruction": "Step 1: Use fake_search to find the price of flight PK05X9. Step 2: Use fake_calculator to calculate the cost for 2 tickets. Step 3: Return only the total cost.",
+  "tools": [
+    "fake_search",
+    "fake_calculator"
+  ],
+  "expected": "30000",
+  "checker": "exact_match"
+}

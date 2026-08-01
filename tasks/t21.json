@@ -1,0 +1,12 @@
+{
+  "id": "t21",
+  "type": "file_data",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_file_reader to read 'products.csv'. Step 2: Use fake_calculator to calculate total stock value (price multiplied by stock for each item, then sum all). Return only the total.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "6500",
+  "checker": "exact_match"
+}

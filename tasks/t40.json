@@ -1,0 +1,11 @@
+{
+  "id": "t40",
+  "type": "team",
+  "length": "short",
+  "instruction": "Writer Agent: Write a 5-word sentence about Pakistan. Reviewer Agent: Count the words. If exactly 5, return the sentence. If not, return 'REJECTED'. Return only the final result.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "Pakistan is a beautiful country",
+  "checker": "contains_substring"
+}

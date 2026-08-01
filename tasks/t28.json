@@ -1,0 +1,12 @@
+{
+  "id": "t28",
+  "type": "booking_shopping",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_search to find all flights. Step 2: Use fake_calculator to find the most expensive flight price. Step 3: Return only the flight code of the most expensive flight.",
+  "tools": [
+    "fake_search",
+    "fake_calculator"
+  ],
+  "expected": "UAE12A",
+  "checker": "exact_match"
+}
