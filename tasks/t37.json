@@ -1,0 +1,12 @@
+{
+  "id": "t37",
+  "type": "reasoning_math",
+  "length": "long",
+  "instruction": "Step 1: Use fake_file_reader to read 'products.csv'. Step 2: For each product, use fake_calculator to divide price by stock to get price per unit. Step 3: Find the product with the lowest price per unit. Step 4: Return only the product name.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "Mouse",
+  "checker": "exact_match"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "t31",
+  "type": "booking_shopping",
+  "length": "long",
+  "instruction": "Step 1: Use fake_search to find all flights under 20000 PKR. Step 2: Pick the first one found. Step 3: Use fake_booking_api to book it. Step 4: Return only the flight code.",
+  "tools": [
+    "fake_search",
+    "fake_booking_api"
+  ],
+  "expected": "PK18B2",
+  "checker": "exact_match"
+}

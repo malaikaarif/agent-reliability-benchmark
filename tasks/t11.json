@@ -1,0 +1,11 @@
+{
+  "id": "t11",
+  "type": "web_research",
+  "length": "short",
+  "instruction": "Use fake_search to find the capital of France. Return only the city name.",
+  "tools": [
+    "fake_search"
+  ],
+  "expected": "Paris",
+  "checker": "exact_match"
+}

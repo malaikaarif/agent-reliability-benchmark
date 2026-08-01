@@ -1,0 +1,11 @@
+{
+  "id": "t33",
+  "type": "reasoning_math",
+  "length": "short",
+  "instruction": "Use fake_calculator to compute 15 percent of 200. Return only the final number.",
+  "tools": [
+    "fake_calculator"
+  ],
+  "expected": "30",
+  "checker": "exact_match"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "t24",
+  "type": "file_data",
+  "length": "long",
+  "instruction": "Step 1: Use fake_file_reader to read 'grades.csv'. Step 2: Calculate total score (math + science) for each student. Step 3: Find the student with the highest total. Step 4: Return only the student's name.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "Hina",
+  "checker": "exact_match"
+}

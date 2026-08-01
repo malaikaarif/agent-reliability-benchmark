@@ -1,0 +1,11 @@
+{
+  "id": "t32",
+  "type": "reasoning_math",
+  "length": "short",
+  "instruction": "Use fake_calculator to compute 1000 divided by 4 plus 25. Return only the final number.",
+  "tools": [
+    "fake_calculator"
+  ],
+  "expected": "275",
+  "checker": "exact_match"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "t15",
+  "type": "web_research",
+  "length": "long",
+  "instruction": "Step 1: Use fake_search to find the height of Everest in meters. Step 2: Use fake_search to find the height of K2 in meters. Step 3: Use fake_calculator to subtract K2 from Everest. Step 4: Use fake_search to find the population of Lahore. Step 5: Extract just the number (14) from the population. Step 6: Use fake_calculator to multiply the height difference by the population number. Return only the final number.",
+  "tools": [
+    "fake_search",
+    "fake_calculator"
+  ],
+  "expected": "3318",
+  "checker": "exact_match"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "t12",
+  "type": "web_research",
+  "length": "short",
+  "instruction": "Use fake_search to find the currency of Japan. Return only the currency name.",
+  "tools": [
+    "fake_search"
+  ],
+  "expected": "Japanese Yen",
+  "checker": "exact_match"
+}

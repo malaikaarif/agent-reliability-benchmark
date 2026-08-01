@@ -1,14 +1,26 @@
-"""Fake tools — zero budget, zero API keys."""
+"""Fake tools — zero budget, zero API keys. Expanded for 45 tasks."""
 
 SEARCH_DB = {
     "capital of pakistan": "Islamabad",
     "capital of france": "Paris",
     "capital of japan": "Tokyo",
+    "capital of germany": "Berlin",
     "height of everest": "8848 meters",
     "height of k2": "8611 meters",
     "population of lahore": "14 million",
     "currency of japan": "Japanese Yen",
-    "capital of germany": "Berlin",
+    "flights from lahore": "Flight PK05X9: Lahore to Karachi on 2026-08-15 for 15000 PKR",
+    "flights to lahore": "Flight PK18B2: Karachi to Lahore on 2026-08-18 for 12000 PKR",
+    "flight pk05x9": "Flight PK05X9: Lahore to Karachi on 2026-08-15 for 15000 PKR",
+    "flight uae12a": "Flight UAE12A: Islamabad to Dubai on 2026-08-20 for 45000 PKR",
+    "flight pk18b2": "Flight PK18B2: Karachi to Lahore on 2026-08-18 for 12000 PKR",
+    "price of flight uae12a": "45000",
+    "price of flight pk05x9": "15000",
+    "price of flight pk18b2": "12000",
+    "all flights": "PK05X9: Lahore-Karachi 15000 PKR, UAE12A: Islamabad-Dubai 45000 PKR, PK18B2: Karachi-Lahore 12000 PKR",
+    "cheapest flight": "PK18B2: Karachi to Lahore on 2026-08-18 for 12000 PKR",
+    "most expensive flight": "UAE12A: Islamabad to Dubai on 2026-08-20 for 45000 PKR",
+    "flights under 20000": "PK05X9: Lahore-Karachi 15000 PKR, PK18B2: Karachi-Lahore 12000 PKR",
 }
 
 FILE_DB = {

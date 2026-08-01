@@ -1,0 +1,13 @@
+{
+  "id": "t27",
+  "type": "booking_shopping",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_search to find the cheapest flight. Step 2: Use fake_booking_api to book that flight. Step 3: Check if the price is under 55000. Return 'YES' if under budget, else 'NO'.",
+  "tools": [
+    "fake_search",
+    "fake_booking_api",
+    "fake_calculator"
+  ],
+  "expected": "YES",
+  "checker": "exact_match"
+}

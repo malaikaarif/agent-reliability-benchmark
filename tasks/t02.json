@@ -1,0 +1,12 @@
+{
+  "id": "t02",
+  "type": "file_data",
+  "length": "short",
+  "instruction": "Use fake_file_reader to read 'employees.csv'. Use fake_calculator to find the difference between the highest and lowest salary. Return only the number.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "40000",
+  "checker": "exact_match"
+}

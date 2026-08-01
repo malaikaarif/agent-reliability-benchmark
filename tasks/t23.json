@@ -1,0 +1,12 @@
+{
+  "id": "t23",
+  "type": "file_data",
+  "length": "long",
+  "instruction": "Step 1: Use fake_file_reader to read 'employees.csv'. Step 2: Identify employees with salary greater than 60000. Step 3: Count how many such employees exist. Step 4: Return only the count.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "2",
+  "checker": "exact_match"
+}

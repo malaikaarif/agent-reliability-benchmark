@@ -1,0 +1,11 @@
+{
+  "id": "t04",
+  "type": "reasoning_math",
+  "length": "short",
+  "instruction": "Use fake_calculator to compute (150 * 23) + 47. Return only the final number.",
+  "tools": [
+    "fake_calculator"
+  ],
+  "expected": "3497",
+  "checker": "exact_match"
+}

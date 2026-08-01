@@ -1,0 +1,11 @@
+{
+  "id": "t42",
+  "type": "team",
+  "length": "medium",
+  "instruction": "Writer Agent: Summarize the following in exactly 3 words: 'The capital of Pakistan is Islamabad and it is beautiful.' Reviewer Agent: Count the words in the summary. If exactly 3, return the summary. If not, return 'REJECTED'. Return only the final result.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "Capital is Islamabad",
+  "checker": "exact_match"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "t41",
+  "type": "team",
+  "length": "short",
+  "instruction": "Writer Agent: Write 'AI agents are useful'. Reviewer Agent: Check that the text contains 'AI'. If yes, return the text. If no, return 'REJECTED'. Return only the final result.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "AI agents are useful",
+  "checker": "exact_match"
+}

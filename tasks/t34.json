@@ -1,0 +1,12 @@
+{
+  "id": "t34",
+  "type": "reasoning_math",
+  "length": "medium",
+  "instruction": "Step 1: Use fake_file_reader to read 'employees.csv'. Step 2: Use fake_calculator to find the total payroll (sum of all salaries). Step 3: Return only the total.",
+  "tools": [
+    "fake_file_reader",
+    "fake_calculator"
+  ],
+  "expected": "275000",
+  "checker": "exact_match"
+}

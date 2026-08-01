@@ -1,0 +1,11 @@
+{
+  "id": "t43",
+  "type": "team",
+  "length": "medium",
+  "instruction": "Writer Agent: Read 'employees.csv' and list all employee names separated by commas. Reviewer Agent: Check that all 4 names (Ali, Sara, Zain, Noor) are present. If yes, return the list. If no, return 'REJECTED'. Return only the final result.",
+  "tools": [
+    "fake_file_reader"
+  ],
+  "expected": "Ali, Sara, Zain, Noor",
+  "checker": "contains_substring"
+}
