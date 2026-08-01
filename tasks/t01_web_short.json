@@ -1,0 +1,9 @@
+{
+  "id": "t01",
+  "type": "web_research",
+  "length": "short",
+  "instruction": "Use fake_search to find the capital of Pakistan. Return only the city name.",
+  "tools": ["fake_search"],
+  "expected": "Islamabad",
+  "checker": "exact_match"
+}
