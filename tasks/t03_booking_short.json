@@ -1,0 +1,9 @@
+{
+  "id": "t03",
+  "type": "booking_shopping",
+  "length": "short",
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "tools": ["fake_search", "fake_booking_api"],
+  "expected": "Booking confirmed for flight PK05X9. Price: 15000 PKR.",
+  "checker": "exact_match"
+}
