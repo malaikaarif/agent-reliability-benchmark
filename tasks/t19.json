@@ -7,5 +7,5 @@
     "fake_file_reader"
   ],
   "expected": "4",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

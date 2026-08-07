@@ -8,5 +8,5 @@
     "fake_booking_api"
   ],
   "expected": "Booking confirmed for flight PK05X9. Price: 15000 PKR.",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

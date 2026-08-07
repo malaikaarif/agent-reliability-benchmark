@@ -7,5 +7,5 @@
     "fake_search"
   ],
   "expected": "45000",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

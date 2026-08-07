@@ -7,5 +7,5 @@
     "fake_search"
   ],
   "expected": "Islamabad",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

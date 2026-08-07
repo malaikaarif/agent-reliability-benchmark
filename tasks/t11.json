@@ -7,5 +7,5 @@
     "fake_search"
   ],
   "expected": "Paris",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

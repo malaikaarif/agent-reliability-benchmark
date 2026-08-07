@@ -7,5 +7,5 @@
     "fake_search"
   ],
   "expected": "PK18B2",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

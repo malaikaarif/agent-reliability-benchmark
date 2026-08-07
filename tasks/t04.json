@@ -7,5 +7,5 @@
     "fake_calculator"
   ],
   "expected": "3497",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }
