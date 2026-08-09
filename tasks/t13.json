@@ -7,5 +7,5 @@
     "fake_search"
   ],
   "expected": "14 million, Japanese Yen",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }

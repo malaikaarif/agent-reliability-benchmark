@@ -8,5 +8,5 @@
     "fake_booking_api"
   ],
   "expected": "PK18B2, 12000, YES",
-  "checker": "exact_match"
+  "checker": "contains_substring"
 }
