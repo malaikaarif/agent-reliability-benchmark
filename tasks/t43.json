@@ -6,6 +6,6 @@
   "tools": [
     "fake_file_reader"
   ],
-  "expected": "Ali, Sara, Zain, Noor",
+  "expected": "Ali,Sara,Zain,Noor",
   "checker": "contains_substring"
 }
