@@ -1,0 +1,12 @@
+{
+  "run_id": "t31_langgraph_r1_20260811_201042",
+  "task_id": "t31",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find all flights under 20000 PKR. Step 2: Pick the first one found. Step 3: Use fake_booking_api to book it. Step 4: Return only the flight code.",
+  "final_answer": "\"PK05X9\"",
+  "success": false,
+  "checker_details": "Expected 'PK18B2', got '\"PK05X9\"'",
+  "time_taken": 101.9241213798523,
+  "timestamp": "2026-08-11T20:10:42.597676"
+}

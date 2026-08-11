@@ -1,0 +1,12 @@
+{
+  "run_id": "t08_crewai_r1_20260808_203203",
+  "task_id": "t08",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find all flights. Step 2: Use fake_calculator to find the cheapest flight price. Step 3: Return only the flight code of the cheapest flight.",
+  "final_answer": "PK18B2",
+  "success": true,
+  "checker_details": "Expected 'PK18B2', got 'PK18B2'",
+  "time_taken": 386.33480191230774,
+  "timestamp": "2026-08-08T20:32:03.546973"
+}

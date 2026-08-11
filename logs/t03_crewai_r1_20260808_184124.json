@@ -1,0 +1,12 @@
+{
+  "run_id": "t03_crewai_r1_20260808_184124",
+  "task_id": "t03",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "final_answer": "Error: Flight code NO RESULTS not found.",
+  "success": false,
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.' inside answer, got 'Error: Flight code NO RESULTS not found.'",
+  "time_taken": 110.98789238929749,
+  "timestamp": "2026-08-08T18:41:24.835312"
+}

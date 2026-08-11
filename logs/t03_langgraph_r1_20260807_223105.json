@@ -1,0 +1,12 @@
+{
+  "run_id": "t03_langgraph_r1_20260807_223105",
+  "task_id": "t03",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "final_answer": "There are no flights available from Lahore to Karachi on 2026-08-15. Please try another date or route.",
+  "success": false,
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.' inside answer, got 'There are no flights available from Lahore to Karachi on 2026-08-15. Please try another date or route.'",
+  "time_taken": 271.5699894428253,
+  "timestamp": "2026-08-07T22:31:05.076300"
+}
