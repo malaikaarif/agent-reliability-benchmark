@@ -1,0 +1,12 @@
+{
+  "run_id": "t44_autogen_r1_20260811_215020",
+  "task_id": "t44",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Writer Agent: Calculate 100 plus 200. Reviewer Agent: Verify the answer is 300. If correct, return '300'. If wrong, return 'REJECTED'. Return only the final result.",
+  "final_answer": "300",
+  "success": true,
+  "checker_details": "Expected '300', got '300'",
+  "time_taken": 26.07369351387024,
+  "timestamp": "2026-08-11T21:50:20.828141"
+}

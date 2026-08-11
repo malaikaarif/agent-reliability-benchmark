@@ -1,0 +1,12 @@
+{
+  "run_id": "t30_crewai_r1_20260809_165121",
+  "task_id": "t30",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find the price of flight PK05X9. Step 2: Use fake_calculator to calculate the cost for 2 tickets. Step 3: Return only the total cost.",
+  "final_answer": "30000",
+  "success": true,
+  "checker_details": "Expected '30000', got '30000'",
+  "time_taken": 137.9642903804779,
+  "timestamp": "2026-08-09T16:51:21.948794"
+}

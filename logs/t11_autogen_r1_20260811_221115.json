@@ -1,0 +1,12 @@
+{
+  "run_id": "t11_autogen_r1_20260811_221115",
+  "task_id": "t11",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the capital of France. Return only the city name.",
+  "final_answer": "Paris",
+  "success": true,
+  "checker_details": "Expected 'Paris' inside answer, got 'Paris'",
+  "time_taken": 19.359960079193115,
+  "timestamp": "2026-08-11T22:11:15.235477"
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "t03_autogen_r1_20260811_220237",
+  "task_id": "t03",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "final_answer": "Flight booked successfully with confirmation number PK05X9.",
+  "success": false,
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.', got 'Flight booked successfully with confirmation number PK05X9.'",
+  "time_taken": 52.86671185493469,
+  "timestamp": "2026-08-11T22:02:37.296678"
+}
