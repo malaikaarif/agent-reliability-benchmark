@@ -17,9 +17,11 @@ from tools.fake_tools import (
     fake_booking_api,
 )
 
+from arw import AdaptiveReliabilityWrapper, ARWConfig
+
 
 # ============================================================
-# TOOLS
+# TOOLS  (unchanged)
 # ============================================================
 
 async def fake_search_tool(query: str) -> str:
@@ -59,7 +61,7 @@ TOOL_MAP = {
 
 
 # ============================================================
-# SYSTEM PROMPT
+# SYSTEM PROMPT  (unchanged)
 # ============================================================
 
 SYSTEM_PROMPT = """
@@ -110,12 +112,14 @@ If the task requires multiple tools, complete all tool calls first,
 then return ONLY the final requested value.
 """
 
+ARW = AdaptiveReliabilityWrapper(config=ARWConfig(max_retries=3))
+
 
 # ============================================================
 # RUN TASK
 # ============================================================
 
-def run_task(task_path: str) -> dict:
+def run_task(task_path: str, use_consistency: bool = False) -> dict:
 
     with open(task_path, "r", encoding="utf-8") as f:
         task = json.load(f)
@@ -169,26 +173,31 @@ def run_task(task_path: str) -> dict:
 
                             return text
 
-            return ""
+            return None  # was "" before — ARW treats None/"" the same way
 
         finally:
 
             await model_client.close()
 
-    try:
+    # --------------------------------------------------------
+    # Execute — wraps the async task in a sync callable ARW can retry.
+    # This is where AutoGen's wrong-answer-dominant failures (43.5%,
+    # your largest bucket) live, plus any client/connection errors.
+    # --------------------------------------------------------
 
-        final_answer = asyncio.run(execute())
+    def execute_sync():
+        return asyncio.run(execute())
 
-    except Exception as e:
-
-        final_answer = (
-            f"ERROR: {type(e).__name__}: {str(e)}"
-        )
-
+    log = ARW.run(execute_sync, use_consistency=use_consistency, context=f"autogen_task_{task.get('id', '?')}")
     elapsed = time.time() - start
 
     return {
-        "final_answer": final_answer.strip(),
+        "final_answer": log.final_output,
         "time_taken": elapsed,
         "framework": "autogen",
+        "arw_retries": log.retries_used,
+        "arw_crashed_before_arw": log.crashed_before_arw,
+        "arw_used_fallback": log.used_fallback,
+        "arw_consistency_used": log.consistency_used,
+        "arw_consistency_agreed": log.consistency_agreed,
     }

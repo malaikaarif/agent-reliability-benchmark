@@ -20,6 +20,8 @@ from tools.fake_tools import (
     fake_booking_api,
 )
 
+from arw import AdaptiveReliabilityWrapper, ARWConfig
+
 
 @tool
 def fake_search_tool(query: str) -> str:
@@ -117,8 +119,10 @@ If it says:
 return only the confirmation message.
 """
 
+ARW = AdaptiveReliabilityWrapper(config=ARWConfig(max_retries=3))
 
-def run_task(task_path: str) -> dict:
+
+def run_task(task_path: str, use_consistency: bool = False) -> dict:
 
     with open(task_path, "r", encoding="utf-8") as f:
         task = json.load(f)
@@ -140,9 +144,14 @@ def run_task(task_path: str) -> dict:
         available_tools,
     )
 
-    start = time.time()
+    # --------------------------------------------------------
+    # Execute — THIS is where LangGraph's 5.4% "graph terminates with no
+    # output" failure happens. ARW retries on exception/empty content,
+    # and if the graph still produces nothing after retries, returns an
+    # [ARW_FALLBACK] string instead of silently dying.
+    # --------------------------------------------------------
 
-    try:
+    def execute():
         result = agent.invoke(
             {
                 "messages": [
@@ -154,16 +163,20 @@ def run_task(task_path: str) -> dict:
                 "recursion_limit": 20
             },
         )
+        content = result["messages"][-1].content
+        return content.strip() if content else None
 
-        final_message = result["messages"][-1].content
-
-    except Exception as e:
-        final_message = f"ERROR: {type(e).__name__}: {str(e)}"
-
+    start = time.time()
+    log = ARW.run(execute, use_consistency=use_consistency, context=f"langgraph_task_{task.get('id', '?')}")
     elapsed = time.time() - start
 
     return {
-        "final_answer": final_message.strip(),
+        "final_answer": log.final_output,
         "time_taken": elapsed,
         "framework": "langgraph",
+        "arw_retries": log.retries_used,
+        "arw_crashed_before_arw": log.crashed_before_arw,
+        "arw_used_fallback": log.used_fallback,
+        "arw_consistency_used": log.consistency_used,
+        "arw_consistency_agreed": log.consistency_agreed,
     }

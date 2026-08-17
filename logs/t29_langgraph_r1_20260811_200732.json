@@ -6,7 +6,7 @@
   "instruction": "Step 1: Use fake_search to find the cheapest flight. Step 2: Extract its code and price. Step 3: Use fake_booking_api to book it. Step 4: Return the result in exact format: 'CODE, PRICE, CONFIRMED' where CONFIRMED is 'YES' if booking succeeded.",
   "final_answer": "\"PK05X9, 15000 PKR, YES\"",
   "success": false,
-  "checker_details": "Expected 'PK18B2, 12000, YES', got '\"PK05X9, 15000 PKR, YES\"'",
+  "checker_details": "Expected 'PK18B2, 12000, YES' inside answer, got '\"PK05X9, 15000 PKR, YES\"'",
   "time_taken": 71.91504168510437,
   "timestamp": "2026-08-11T20:07:32.354362"
 }

@@ -15,9 +15,11 @@ from tools.fake_tools import (
     fake_booking_api,
 )
 
+from arw import AdaptiveReliabilityWrapper, ARWConfig
+
 
 # ============================================================
-# TOOLS
+# TOOLS  (unchanged)
 # ============================================================
 
 @tool("fake_search")
@@ -51,12 +53,18 @@ TOOL_MAP = {
     "fake_booking_api": fake_booking_api_tool,
 }
 
+# ARW instance — shared config for every task in this framework.
+# use_consistency defaults False here (see run_task below) because CrewAI
+# is by far your slowest framework already; turn it on only if you want
+# the "ARW-full" ablation run for the paper (see note at bottom of file).
+ARW = AdaptiveReliabilityWrapper(config=ARWConfig(max_retries=3))
+
 
 # ============================================================
 # RUN TASK
 # ============================================================
 
-def run_task(task_path: str) -> dict:
+def run_task(task_path: str, use_consistency: bool = False) -> dict:
 
     with open(task_path, "r", encoding="utf-8") as f:
         task = json.load(f)
@@ -174,22 +182,37 @@ CRITICAL RULES:
     )
 
     # --------------------------------------------------------
-    # Execute
+    # Execute — THIS is where the 10.3% None/empty crash happens.
+    # ARW wraps it: retries on exception/empty, and if all retries are
+    # exhausted, returns an [ARW_FALLBACK] string instead of raising.
     # --------------------------------------------------------
 
-    start = time.time()
-
-    try:
+    def execute():
         result = crew.kickoff()
-        final_answer = str(result).strip()
+        return str(result).strip()
 
-    except Exception as e:
-        final_answer = f"ERROR: {type(e).__name__}: {str(e)}"
-
+    start = time.time()
+    log = ARW.run(execute, use_consistency=use_consistency, context=f"crewai_task_{task['id']}")
     elapsed = time.time() - start
 
     return {
-        "final_answer": final_answer,
+        "final_answer": log.final_output,
         "time_taken": elapsed,
         "framework": "crewai",
+        # extra ARW fields — safe to ignore in analyze_failures.py if you
+        # don't need them yet; useful for the ARW-vs-baseline table.
+        "arw_retries": log.retries_used,
+        "arw_crashed_before_arw": log.crashed_before_arw,
+        "arw_used_fallback": log.used_fallback,
+        "arw_consistency_used": log.consistency_used,
+        "arw_consistency_agreed": log.consistency_agreed,
     }
+
+# NOTE on the two ablation runs for the paper:
+#   1) ARW-retry-only  : run_task(path)                      (use_consistency=False, default)
+#      -> targets the crash/empty failure modes specifically
+#   2) ARW-full         : run_task(path, use_consistency=True)
+#      -> also targets the wrong-answer bucket, but runs the crew up to
+#         3x per task, so it's ~3x slower. Worth reporting both numbers
+#         in the paper as an ablation, if your runner supports passing
+#         this flag through.
