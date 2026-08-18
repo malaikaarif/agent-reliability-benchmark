@@ -1,0 +1,12 @@
+{
+  "task_id": "t34",
+  "success": true,
+  "final_answer": "Return only the total payroll, which is 275000.",
+  "checker_details": "",
+  "time_taken": 58.26609563827515,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}
