@@ -1,0 +1,12 @@
+{
+  "run_id": "t08_langgraph_r1_20260812_114056",
+  "task_id": "t08",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find all flights. Step 2: Use fake_calculator to find the cheapest flight price. Step 3: Return only the flight code of the cheapest flight.",
+  "final_answer": "",
+  "success": false,
+  "checker_details": "Expected 'PK18B2', got ''",
+  "time_taken": 73.4926118850708,
+  "timestamp": "2026-08-12T11:40:56.967426"
+}

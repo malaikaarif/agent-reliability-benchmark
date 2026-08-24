@@ -1,0 +1,12 @@
+{
+  "task_id": "t28",
+  "success": false,
+  "final_answer": "[ARW_FALLBACK] No valid response after retries \u2014 routed to fallback instead of crashing/terminating silently. (context: langgraph_task_t28)",
+  "checker_details": "ARW_FALLBACK: all retries exhausted",
+  "time_taken": 203.39986538887024,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 4,
+  "arw_crashed_before_arw": true,
+  "arw_used_fallback": true
+}

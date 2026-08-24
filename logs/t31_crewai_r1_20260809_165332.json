@@ -1,0 +1,12 @@
+{
+  "run_id": "t31_crewai_r1_20260809_165332",
+  "task_id": "t31",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find all flights under 20000 PKR. Step 2: Pick the first one found. Step 3: Use fake_booking_api to book it. Step 4: Return only the flight code.",
+  "final_answer": "N/A",
+  "success": false,
+  "checker_details": "Expected 'PK18B2', got 'N/A'",
+  "time_taken": 111.34672856330872,
+  "timestamp": "2026-08-09T16:53:32.623777"
+}

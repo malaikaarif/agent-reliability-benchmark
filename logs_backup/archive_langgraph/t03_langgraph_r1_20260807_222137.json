@@ -1,0 +1,12 @@
+{
+  "run_id": "t03_langgraph_r1_20260807_222137",
+  "task_id": "t03",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "final_answer": "Flight booking failed due to an invalid flight code. Please provide a valid flight code for the trip from Lahore to Karachi on 2026-08-15.",
+  "success": false,
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.' inside answer, got 'Flight booking failed due to an invalid flight code. Please provide a valid flight code for the trip from Lahore to Karachi on 2026-08-15.'",
+  "time_taken": 95.4618570804596,
+  "timestamp": "2026-08-07T22:21:37.083189"
+}

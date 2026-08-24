@@ -1,0 +1,12 @@
+{
+  "run_id": "t17_autogen_r1_20260812_171706",
+  "task_id": "t17",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find flights from Lahore. Step 2: Count how many flights are found. Step 3: Use fake_search to find flights to Lahore. Step 4: Count how many flights are found. Step 5: Use fake_calculator to add both counts. Return only the total number.",
+  "final_answer": "7",
+  "success": false,
+  "checker_details": "Expected '2', got '7'",
+  "time_taken": 54.354408979415894,
+  "timestamp": "2026-08-12T17:17:06.258958"
+}

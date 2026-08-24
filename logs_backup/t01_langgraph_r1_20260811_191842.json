@@ -1,0 +1,12 @@
+{
+  "run_id": "t01_langgraph_r1_20260811_191842",
+  "task_id": "t01",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the capital of Pakistan. Return only the city name.",
+  "final_answer": "Islamabad",
+  "success": true,
+  "checker_details": "Expected 'Islamabad' inside answer, got 'Islamabad'",
+  "time_taken": 94.3850347995758,
+  "timestamp": "2026-08-11T19:18:42.203908"
+}

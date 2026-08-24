@@ -1,0 +1,9 @@
+{
+  "task_id": "t41",
+  "success": false,
+  "final_answer": "\"AI agents are useful\" contains 'AI', so the result is:\n\nAI agents are useful",
+  "checker_details": "Expected 'AI agents are useful', got '\"AI agents are useful\" contains 'AI', so the result is:\n\nAI agents are useful'",
+  "time_taken": 8.405656099319458,
+  "framework": "langgraph",
+  "repeat": 2
+}

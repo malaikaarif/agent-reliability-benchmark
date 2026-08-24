@@ -1,0 +1,9 @@
+{
+  "task_id": "t12",
+  "success": false,
+  "final_answer": "Yen",
+  "checker_details": "Expected 'Japanese Yen' inside answer, got 'Yen'",
+  "time_taken": 26.35868525505066,
+  "framework": "langgraph",
+  "repeat": 2
+}

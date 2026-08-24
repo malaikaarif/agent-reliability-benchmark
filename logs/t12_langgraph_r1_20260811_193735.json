@@ -1,0 +1,12 @@
+{
+  "run_id": "t12_langgraph_r1_20260811_193735",
+  "task_id": "t12",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the currency of Japan. Return only the currency name.",
+  "final_answer": "Yen",
+  "success": false,
+  "checker_details": "Expected 'Japanese Yen' inside answer, got 'Yen'",
+  "time_taken": 16.856353759765625,
+  "timestamp": "2026-08-11T19:37:35.342002"
+}

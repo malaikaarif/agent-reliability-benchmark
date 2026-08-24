@@ -1,0 +1,12 @@
+{
+  "run_id": "t44_langgraph_r1_20260811_202625",
+  "task_id": "t44",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Writer Agent: Calculate 100 plus 200. Reviewer Agent: Verify the answer is 300. If correct, return '300'. If wrong, return 'REJECTED'. Return only the final result.",
+  "final_answer": "300",
+  "success": true,
+  "checker_details": "Expected '300', got '300'",
+  "time_taken": 33.225900650024414,
+  "timestamp": "2026-08-11T20:26:25.272167"
+}

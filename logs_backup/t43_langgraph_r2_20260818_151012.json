@@ -1,0 +1,12 @@
+{
+  "task_id": "t43",
+  "success": true,
+  "final_answer": "Ali, Sara, Zain, Noor",
+  "checker_details": "",
+  "time_taken": 43.10337543487549,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

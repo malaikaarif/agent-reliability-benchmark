@@ -1,0 +1,12 @@
+{
+  "task_id": "t39",
+  "success": true,
+  "final_answer": "\"Hello World\"",
+  "checker_details": "",
+  "time_taken": 4.823191165924072,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

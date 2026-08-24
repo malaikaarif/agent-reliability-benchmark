@@ -1,7 +1,12 @@
-import sys
 import os
+os.environ["CREWAI_DISABLE_TELEMETRY"] = "true"
+os.environ["OTEL_SDK_DISABLED"] = "true"
+
+import sys
 import time
+import threading
 import json
+
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
@@ -15,9 +20,11 @@ from tools.fake_tools import (
     fake_booking_api,
 )
 
+from arw import AdaptiveReliabilityWrapper, ARWConfig
+
 
 # ============================================================
-# TOOLS
+# TOOLS  (unchanged)
 # ============================================================
 
 @tool("fake_search")
@@ -51,12 +58,18 @@ TOOL_MAP = {
     "fake_booking_api": fake_booking_api_tool,
 }
 
+# ARW instance — shared config for every task in this framework.
+# use_consistency defaults False here (see run_task below) because CrewAI
+# is by far your slowest framework already; turn it on only if you want
+# the "ARW-full" ablation run for the paper (see note at bottom of file).
+ARW = AdaptiveReliabilityWrapper(config=ARWConfig(max_retries=3))
+
 
 # ============================================================
 # RUN TASK
 # ============================================================
 
-def run_task(task_path: str) -> dict:
+def run_task(task_path: str, use_consistency: bool = False) -> dict:
 
     with open(task_path, "r", encoding="utf-8") as f:
         task = json.load(f)
@@ -75,6 +88,7 @@ def run_task(task_path: str) -> dict:
         model="ollama/qwen2.5:7b",
         base_url="http://localhost:11434",
         temperature=0,
+        timeout=60,
     )
 
     # --------------------------------------------------------
@@ -108,7 +122,7 @@ def run_task(task_path: str) -> dict:
 
         tools=available_tools,
 
-        verbose=False,
+        verbose=True,
 
         allow_delegation=False,
 
@@ -164,32 +178,89 @@ CRITICAL RULES:
     )
 
     # --------------------------------------------------------
-    # Crew
+    # Execute — THIS is where the 10.3% None/empty crash happens.
+    # ARW wraps it: retries on exception/empty, and if all retries are
+    # exhausted, returns an [ARW_FALLBACK] string instead of raising.
+    #
+    # IMPORTANT: a fresh Crew/Agent/Task is built INSIDE execute(),
+    # so every ARW retry gets its own independent objects. Reusing one
+    # shared `crew` across retries caused two kickoff() calls to run
+    # concurrently (the abandoned/timed-out one plus the new retry),
+    # which corrupted CrewAI's internal event bus ("Event pairing
+    # mismatch" / "Crew Execution Failed").
+    #
+    # The kickoff() call runs in a daemon thread with a hard timeout,
+    # so a stuck call (e.g. a tool-call parse loop that never returns)
+    # can't hang the batch AND can't block Python process exit even
+    # after being abandoned. If it times out, we raise TimeoutError so
+    # ARW.run() treats it like any other failure and retries/falls
+    # back accordingly.
     # --------------------------------------------------------
 
-    crew = Crew(
-        agents=[agent],
-        tasks=[crew_task],
-        verbose=False,
-    )
+    def _build_crew():
+        fresh_agent = Agent(
+            role=agent.role,
+            goal=agent.goal,
+            backstory=agent.backstory,
+            llm=llm,
+            tools=available_tools,
+            verbose=True,
+            allow_delegation=False,
+            max_iter=15,
+            max_retry_limit=2,
+        )
+        fresh_task = Task(
+            description=task_description,
+            expected_output=crew_task.expected_output,
+            agent=fresh_agent,
+        )
+        return Crew(agents=[fresh_agent], tasks=[fresh_task], verbose=True)
 
-    # --------------------------------------------------------
-    # Execute
-    # --------------------------------------------------------
+    def execute():
+        result_box = {}
+
+        def _run():
+            try:
+                fresh_crew = _build_crew()
+                result_box["value"] = str(fresh_crew.kickoff()).strip()
+            except Exception as e:
+                result_box["error"] = e
+
+        thread = threading.Thread(target=_run, daemon=True)
+        thread.start()
+        thread.join(timeout=90)
+
+        if thread.is_alive():
+            # Abandon it — daemon=True means it can't block process exit.
+            raise TimeoutError(f"crew.kickoff() exceeded 90s for task {task['id']}")
+
+        if "error" in result_box:
+            raise result_box["error"]
+
+        return result_box.get("value", "")
 
     start = time.time()
-
-    try:
-        result = crew.kickoff()
-        final_answer = str(result).strip()
-
-    except Exception as e:
-        final_answer = f"ERROR: {type(e).__name__}: {str(e)}"
-
+    log = ARW.run(execute, use_consistency=use_consistency, context=f"crewai_task_{task['id']}")
     elapsed = time.time() - start
 
     return {
-        "final_answer": final_answer,
+        "final_answer": log.final_output,
         "time_taken": elapsed,
         "framework": "crewai",
+        # extra ARW fields — safe to ignore in analyze_failures.py if you
+        # don't need them yet; useful for the ARW-vs-baseline table.
+        "arw_retries": log.retries_used,
+        "arw_crashed_before_arw": log.crashed_before_arw,
+        "arw_used_fallback": log.used_fallback,
+        "arw_consistency_used": log.consistency_used,
+        "arw_consistency_agreed": log.consistency_agreed,
     }
+
+# NOTE on the two ablation runs for the paper:
+#   1) ARW-retry-only  : run_task(path)                      (use_consistency=False, default)
+#      -> targets the crash/empty failure modes specifically
+#   2) ARW-full         : run_task(path, use_consistency=True)
+#      -> also targets the wrong-answer bucket, but runs the crew up to
+#         3x per task, so it's ~3x slower. Worth reporting both numbers
+#         in the paper as an ablation, if your runner supports passing
+#         this flag through.

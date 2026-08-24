@@ -1,0 +1,12 @@
+{
+  "task_id": "t12",
+  "success": true,
+  "final_answer": "Yen",
+  "checker_details": "",
+  "time_taken": 15.916347980499268,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

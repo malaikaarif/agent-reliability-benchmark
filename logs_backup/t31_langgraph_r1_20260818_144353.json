@@ -1,0 +1,12 @@
+{
+  "task_id": "t31",
+  "success": true,
+  "final_answer": "\"PK05X9\"",
+  "checker_details": "",
+  "time_taken": 85.08575558662415,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

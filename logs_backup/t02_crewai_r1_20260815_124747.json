@@ -1,0 +1,12 @@
+{
+  "run_id": "t02_crewai_r1_20260815_124747",
+  "task_id": "t02",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Use fake_file_reader to read 'employees.csv'. Use fake_calculator to find the difference between the highest and lowest salary. Return only the number.",
+  "final_answer": "40000",
+  "success": true,
+  "checker_details": "Expected '40000' inside answer, got '40000'",
+  "time_taken": 155.61946964263916,
+  "timestamp": "2026-08-15T12:47:47.103009"
+}
