@@ -1,0 +1,9 @@
+{
+  "task_id": "t39",
+  "success": false,
+  "final_answer": "\"Hello World\"",
+  "checker_details": "Expected 'Hello World', got '\"Hello World\"'",
+  "time_taken": 8.96042013168335,
+  "framework": "langgraph",
+  "repeat": 1
+}

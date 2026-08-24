@@ -1,0 +1,12 @@
+{
+  "run_id": "t06_crewai_r1_20260815_130153",
+  "task_id": "t06",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_file_reader to read 'products.csv'. Step 2: Calculate total value of all stock (price multiplied by stock for each item, then sum). Step 3: Read 'budget.txt' and find the remaining budget number. Step 4: Return 'YES' if total stock value fits in the remaining budget, otherwise return 'NO'.",
+  "final_answer": "YES",
+  "success": true,
+  "checker_details": "Expected 'YES', got 'YES'",
+  "time_taken": 177.9452497959137,
+  "timestamp": "2026-08-15T13:01:53.579127"
+}

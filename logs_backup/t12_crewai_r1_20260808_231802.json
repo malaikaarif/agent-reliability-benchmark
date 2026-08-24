@@ -1,0 +1,12 @@
+{
+  "run_id": "t12_crewai_r1_20260808_231802",
+  "task_id": "t12",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the currency of Japan. Return only the currency name.",
+  "final_answer": "Japanese Yen",
+  "success": true,
+  "checker_details": "Expected 'Japanese Yen' inside answer, got 'Japanese Yen'",
+  "time_taken": 288.71028447151184,
+  "timestamp": "2026-08-08T23:18:02.672126"
+}

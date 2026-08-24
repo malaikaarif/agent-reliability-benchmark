@@ -1,0 +1,12 @@
+{
+  "run_id": "t40_langgraph_r5_20260812_214651",
+  "task_id": "t40",
+  "framework": "langgraph",
+  "repeat": 5,
+  "instruction": "Writer Agent: Return exactly 'Pakistan is a beautiful country'. Reviewer Agent: Verify that the text exactly matches 'Pakistan is a beautiful country'. If yes, return it. If not, return 'REJECTED'. Return only the final result.",
+  "final_answer": "Pakistan is a beautiful country",
+  "success": true,
+  "checker_details": "Expected 'Pakistan is a beautiful country' inside answer, got 'Pakistan is a beautiful country'",
+  "time_taken": 42.67807149887085,
+  "timestamp": "2026-08-12T21:46:51.641513"
+}

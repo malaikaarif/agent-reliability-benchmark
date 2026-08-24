@@ -1,0 +1,12 @@
+{
+  "run_id": "t21_crewai_r1_20260809_161321",
+  "task_id": "t21",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_file_reader to read 'products.csv'. Step 2: Use fake_calculator to calculate total stock value (price multiplied by stock for each item, then sum all). Return only the total.",
+  "final_answer": "6500",
+  "success": true,
+  "checker_details": "Expected '6500', got '6500'",
+  "time_taken": 135.41463088989258,
+  "timestamp": "2026-08-09T16:13:21.275459"
+}

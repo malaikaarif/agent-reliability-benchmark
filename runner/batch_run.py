@@ -79,6 +79,13 @@ def main():
         help="Frameworks to run",
     )
 
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=180,
+        help="Per-run timeout in seconds (default: 180)",
+    )
+
     args = parser.parse_args()
 
     project_root = os.path.abspath(
@@ -102,12 +109,14 @@ def main():
     print(f"Frameworks: {', '.join(args.frameworks)}")
     print(f"Repeats:    {args.repeats}")
     print(f"Total runs: {total_runs}")
+    print(f"Timeout:    {args.timeout}s per run")
     print("=" * 70)
 
     completed = 0
     passed = 0
     failed = 0
     crashed = 0
+    timed_out = 0
 
     overall_start = time.time()
 
@@ -142,7 +151,7 @@ def main():
                 ]
 
                 try:
-                    result = subprocess.run(command)
+                    result = subprocess.run(command, timeout=args.timeout)
 
                     elapsed = time.time() - start
 
@@ -160,6 +169,16 @@ def main():
                             f"{task_name} | {framework} | r{repeat} "
                             f"| {elapsed:.2f}s"
                         )
+
+                except subprocess.TimeoutExpired:
+                    crashed += 1
+                    timed_out += 1
+                    elapsed = time.time() - start
+                    print(
+                        f"[BATCH] TIMEOUT | "
+                        f"{task_name} | {framework} | r{repeat} "
+                        f"| {elapsed:.2f}s (exceeded {args.timeout}s)"
+                    )
 
                 except Exception as e:
                     crashed += 1
@@ -182,7 +201,7 @@ def main():
                     print(f"Completed: {completed}/{total_runs}")
                     print(f"Passed:    {passed}")
                     print(f"Failed:    {failed}")
-                    print(f"Crashed:   {crashed}")
+                    print(f"Crashed:   {crashed} (of which {timed_out} timed out)")
                     print(f"Elapsed:   {elapsed_total / 60:.2f} minutes")
                     print("-" * 70)
 
@@ -195,7 +214,7 @@ def main():
     print(f"Total runs: {total_runs}")
     print(f"Passed:     {passed}")
     print(f"Failed:     {failed}")
-    print(f"Crashed:    {crashed}")
+    print(f"Crashed:    {crashed} (of which {timed_out} timed out)")
     print(f"Time:       {total_time / 60:.2f} minutes")
     print("=" * 70)
 

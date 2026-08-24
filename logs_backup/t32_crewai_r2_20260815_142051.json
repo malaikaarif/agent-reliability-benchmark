@@ -1,0 +1,12 @@
+{
+  "run_id": "t32_crewai_r2_20260815_142051",
+  "task_id": "t32",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Use fake_calculator to compute 1000 divided by 4 plus 25. Return only the final number.",
+  "final_answer": "275",
+  "success": true,
+  "checker_details": "Expected '275' inside answer, got '275'",
+  "time_taken": 34.25157952308655,
+  "timestamp": "2026-08-15T14:20:51.090135"
+}

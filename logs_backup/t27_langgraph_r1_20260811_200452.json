@@ -1,0 +1,12 @@
+{
+  "run_id": "t27_langgraph_r1_20260811_200452",
+  "task_id": "t27",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find the cheapest flight. Step 2: Use fake_booking_api to book that flight. Step 3: Check if the price is under 55000. Return 'YES' if under budget, else 'NO'.",
+  "final_answer": "NO",
+  "success": false,
+  "checker_details": "Expected 'YES', got 'NO'",
+  "time_taken": 103.86500668525696,
+  "timestamp": "2026-08-11T20:04:52.581899"
+}

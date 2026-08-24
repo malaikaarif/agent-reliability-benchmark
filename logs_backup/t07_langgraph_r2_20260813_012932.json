@@ -1,0 +1,9 @@
+{
+  "task_id": "t07",
+  "success": false,
+  "final_answer": "The average math score is 85 and the average science score is approximately 86.67. Therefore, the subject with the higher average is science.\n\nReturn only the name of the subject with the higher average.",
+  "checker_details": "Expected 'science', got 'The average math score is 85 and the average science score is approximately 86.67. Therefore, the subject with the higher average is science.\n\nReturn only the name of the subject with the higher average.'",
+  "time_taken": 53.261857748031616,
+  "framework": "langgraph",
+  "repeat": 2
+}

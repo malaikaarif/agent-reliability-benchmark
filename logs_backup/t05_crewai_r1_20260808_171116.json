@@ -1,0 +1,12 @@
+{
+  "run_id": "t05_crewai_r1_20260808_171116",
+  "task_id": "t05",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find the height of Everest. Step 2: Use fake_search to find the height of K2. Step 3: Use fake_calculator to subtract K2's height from Everest's height. Return only the difference in meters as a number.",
+  "final_answer": "1845",
+  "success": false,
+  "checker_details": "Expected '237' inside answer, got '1845'",
+  "time_taken": 54.99548268318176,
+  "timestamp": "2026-08-08T17:11:16.747756"
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "t12_autogen_r2_20260814_212053",
+  "task_id": "t12",
+  "framework": "autogen",
+  "repeat": 2,
+  "instruction": "Use fake_search to find the currency of Japan. Return only the currency name.",
+  "final_answer": "Yen",
+  "success": false,
+  "checker_details": "Expected 'Japanese Yen' inside answer, got 'Yen'",
+  "time_taken": 17.662826538085938,
+  "timestamp": "2026-08-14T21:20:53.664255"
+}

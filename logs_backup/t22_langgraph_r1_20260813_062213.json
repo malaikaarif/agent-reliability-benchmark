@@ -1,0 +1,9 @@
+{
+  "task_id": "t22",
+  "success": true,
+  "final_answer": "92",
+  "checker_details": "Expected '92' inside answer, got '92'",
+  "time_taken": 24.76210331916809,
+  "framework": "langgraph",
+  "repeat": 1
+}
