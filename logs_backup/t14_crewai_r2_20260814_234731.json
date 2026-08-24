@@ -1,0 +1,12 @@
+{
+  "run_id": "t14_crewai_r2_20260814_234731",
+  "task_id": "t14",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Step 1: Use fake_search to find the capital of Germany. Step 2: Use fake_search to find the capital of France. Step 3: Use fake_search to find the capital of Japan. Step 4: Sort these three capitals alphabetically. Step 5: Return them separated by commas with one space after each comma.",
+  "final_answer": "Berlin, Paris, Tokyo",
+  "success": true,
+  "checker_details": "Expected 'Berlin, Paris, Tokyo', got 'Berlin, Paris, Tokyo'",
+  "time_taken": 37.03289437294006,
+  "timestamp": "2026-08-14T23:47:31.780676"
+}

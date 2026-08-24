@@ -1,0 +1,12 @@
+{
+  "run_id": "t04_langgraph_r1_20260811_193126",
+  "task_id": "t04",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_calculator to compute (150 * 23) + 47. Return only the final number.",
+  "final_answer": "3497",
+  "success": true,
+  "checker_details": "Expected '3497' inside answer, got '3497'",
+  "time_taken": 34.25014543533325,
+  "timestamp": "2026-08-11T19:31:26.892627"
+}

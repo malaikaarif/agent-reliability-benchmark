@@ -1,0 +1,12 @@
+{
+  "run_id": "t25_autogen_r1_20260814_214437",
+  "task_id": "t25",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the price of flight UAE12A. Return only the price number.",
+  "final_answer": "45000",
+  "success": true,
+  "checker_details": "Expected '45000' inside answer, got '45000'",
+  "time_taken": 96.46254873275757,
+  "timestamp": "2026-08-14T21:44:37.660303"
+}

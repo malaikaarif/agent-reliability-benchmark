@@ -1,0 +1,12 @@
+{
+  "run_id": "t03_langgraph_r1_20260807_194950",
+  "task_id": "t03",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "final_answer": "ERROR: ResponseError: timed out waiting for llama-server to start -  (status code: 500)",
+  "success": false,
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.' inside answer, got 'ERROR: ResponseError: timed out waiting for llama-server to start -  (status code: 500)'",
+  "time_taken": 2523.8655395507812,
+  "timestamp": "2026-08-07T19:49:50.522624"
+}

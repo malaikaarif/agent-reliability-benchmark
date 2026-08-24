@@ -1,0 +1,9 @@
+{
+  "task_id": "t32",
+  "success": true,
+  "final_answer": "275",
+  "checker_details": "Expected '275' inside answer, got '275'",
+  "time_taken": 28.727088451385498,
+  "framework": "langgraph",
+  "repeat": 1
+}

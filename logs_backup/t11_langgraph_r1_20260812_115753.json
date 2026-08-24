@@ -1,0 +1,12 @@
+{
+  "run_id": "t11_langgraph_r1_20260812_115753",
+  "task_id": "t11",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the capital of France. Return only the city name.",
+  "final_answer": "Paris",
+  "success": true,
+  "checker_details": "Expected 'Paris' inside answer, got 'Paris'",
+  "time_taken": 82.57653856277466,
+  "timestamp": "2026-08-12T11:57:53.253862"
+}

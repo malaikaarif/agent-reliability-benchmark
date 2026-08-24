@@ -1,0 +1,12 @@
+{
+  "task_id": "t13",
+  "success": true,
+  "final_answer": "'14 million, Japanese Yen'",
+  "checker_details": "",
+  "time_taken": 29.23883318901062,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

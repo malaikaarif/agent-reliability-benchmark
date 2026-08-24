@@ -1,0 +1,12 @@
+{
+  "task_id": "t21",
+  "success": true,
+  "final_answer": "6500",
+  "checker_details": "",
+  "time_taken": 34.418405532836914,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

@@ -1,0 +1,12 @@
+{
+  "task_id": "t24",
+  "success": true,
+  "final_answer": "Sorry, need more steps to process this request.",
+  "checker_details": "",
+  "time_taken": 143.45044803619385,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

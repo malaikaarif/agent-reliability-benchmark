@@ -1,0 +1,12 @@
+{
+  "run_id": "t11_crewai_r3_20260812_120242",
+  "task_id": "t11",
+  "framework": "crewai",
+  "repeat": 3,
+  "instruction": "Use fake_search to find the capital of France. Return only the city name.",
+  "final_answer": "Paris",
+  "success": true,
+  "checker_details": "Expected 'Paris' inside answer, got 'Paris'",
+  "time_taken": 27.387040615081787,
+  "timestamp": "2026-08-12T12:02:42.793739"
+}
