@@ -1,0 +1,9 @@
+{
+  "task_id": "t40",
+  "success": false,
+  "final_answer": "REJECTED",
+  "checker_details": "Expected 'Pakistan is a beautiful country' inside answer, got 'REJECTED'",
+  "time_taken": 6.022874593734741,
+  "framework": "langgraph",
+  "repeat": 1
+}

@@ -1,0 +1,12 @@
+{
+  "task_id": "t03",
+  "success": true,
+  "final_answer": "Error: Flight code NO RESULTS not found.",
+  "checker_details": "",
+  "time_taken": 43.02394962310791,
+  "framework": "crewai",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

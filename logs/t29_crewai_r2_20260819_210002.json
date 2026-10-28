@@ -1,0 +1,12 @@
+{
+  "task_id": "t29",
+  "success": true,
+  "final_answer": "PK18B2, 12000 PKR, YES",
+  "checker_details": "",
+  "time_taken": 125.24658417701721,
+  "framework": "crewai",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

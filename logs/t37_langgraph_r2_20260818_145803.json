@@ -1,0 +1,12 @@
+{
+  "task_id": "t37",
+  "success": true,
+  "final_answer": "The calculations for price per unit are as follows:\n- Laptop: 800 / 5 = 160\n- Mouse: 20 / 50 = 0.4\n- Keyboard: 50 / 30 \u2248 1.67\n\nThe product with the lowest price per unit is the Mouse.\n\nReturn only the product name:\n\"Mouse\"",
+  "checker_details": "",
+  "time_taken": 141.67242741584778,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

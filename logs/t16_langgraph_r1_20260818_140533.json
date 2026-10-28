@@ -1,0 +1,12 @@
+{
+  "task_id": "t16",
+  "success": true,
+  "final_answer": "PIJ",
+  "checker_details": "",
+  "time_taken": 149.60060739517212,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

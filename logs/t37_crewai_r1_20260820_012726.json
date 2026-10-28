@@ -1,0 +1,12 @@
+{
+  "task_id": "t37",
+  "success": false,
+  "final_answer": "[ARW_FALLBACK] No valid response after retries \u2014 routed to fallback instead of crashing/terminating silently. (context: crewai_task_t37) (last_error: RuntimeError: Executor is already running. Cannot invoke the same executor instance concurrently.)",
+  "checker_details": "ARW_FALLBACK: all retries exhausted",
+  "time_taken": 95.76822829246521,
+  "framework": "crewai",
+  "repeat": 1,
+  "arw_retries": 4,
+  "arw_crashed_before_arw": true,
+  "arw_used_fallback": true
+}

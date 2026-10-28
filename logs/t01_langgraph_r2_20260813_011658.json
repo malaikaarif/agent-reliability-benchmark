@@ -1,0 +1,9 @@
+{
+  "task_id": "t01",
+  "success": true,
+  "final_answer": "Islamabad",
+  "checker_details": "Expected 'Islamabad' inside answer, got 'Islamabad'",
+  "time_taken": 24.858838081359863,
+  "framework": "langgraph",
+  "repeat": 2
+}

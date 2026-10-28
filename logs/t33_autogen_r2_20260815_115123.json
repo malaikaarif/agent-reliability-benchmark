@@ -1,0 +1,12 @@
+{
+  "run_id": "t33_autogen_r2_20260815_115123",
+  "task_id": "t33",
+  "framework": "autogen",
+  "repeat": 2,
+  "instruction": "Use fake_calculator to compute 15 percent of 200. Return only the final number.",
+  "final_answer": "30",
+  "success": true,
+  "checker_details": "Expected '30', got '30'",
+  "time_taken": 63.438026428222656,
+  "timestamp": "2026-08-15T11:51:23.844497"
+}

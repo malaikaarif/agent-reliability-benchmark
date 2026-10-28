@@ -1,0 +1,12 @@
+{
+  "task_id": "t01",
+  "success": true,
+  "final_answer": "Islamabad",
+  "checker_details": "",
+  "time_taken": 287.21020698547363,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 3,
+  "arw_crashed_before_arw": true,
+  "arw_used_fallback": false
+}

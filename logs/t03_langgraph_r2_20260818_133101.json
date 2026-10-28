@@ -1,0 +1,12 @@
+{
+  "task_id": "t03",
+  "success": true,
+  "final_answer": "Confirmation message for booking flight PK05X9: Booking confirmed for flight PK05X9. Price: 15000 PKR.",
+  "checker_details": "",
+  "time_taken": 52.433077335357666,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

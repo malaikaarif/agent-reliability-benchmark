@@ -1,0 +1,12 @@
+{
+  "task_id": "t29",
+  "success": true,
+  "final_answer": "\"PK05X9, 15000 PKR, YES\"",
+  "checker_details": "",
+  "time_taken": 52.14192724227905,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

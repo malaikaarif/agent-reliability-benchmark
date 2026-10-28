@@ -1,0 +1,12 @@
+{
+  "run_id": "t16_crewai_r2_20260812_124825",
+  "task_id": "t16",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Step 1: Use fake_search to find the capital of Pakistan. Step 2: Use fake_search to find the capital of France. Step 3: Use fake_search to find the capital of Japan. Step 4: Take the first letter of each capital. Step 5: Concatenate them in alphabetical order. Return only the 3-letter result.",
+  "final_answer": "POT",
+  "success": false,
+  "checker_details": "Expected 'IPT', got 'POT'",
+  "time_taken": 49.975401163101196,
+  "timestamp": "2026-08-12T12:48:25.180620"
+}

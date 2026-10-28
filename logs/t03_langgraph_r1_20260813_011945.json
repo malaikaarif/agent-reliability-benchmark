@@ -1,0 +1,9 @@
+{
+  "task_id": "t03",
+  "success": true,
+  "final_answer": "Confirmation message for booking flight PK05X9: Booking confirmed for flight PK05X9. Price: 15000 PKR.",
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.' inside answer, got 'Confirmation message for booking flight PK05X9: Booking confirmed for flight PK05X9. Price: 15000 PKR.'",
+  "time_taken": 74.03468465805054,
+  "framework": "langgraph",
+  "repeat": 1
+}

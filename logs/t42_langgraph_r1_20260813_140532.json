@@ -1,0 +1,9 @@
+{
+  "task_id": "t42",
+  "success": false,
+  "final_answer": "REJECTED",
+  "checker_details": "Expected 'Capital is Islamabad', got 'REJECTED'",
+  "time_taken": 7.879371881484985,
+  "framework": "langgraph",
+  "repeat": 1
+}

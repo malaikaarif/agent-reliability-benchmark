@@ -1,0 +1,12 @@
+{
+  "run_id": "t26_crewai_r2_20260815_140209",
+  "task_id": "t26",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Use fake_search to find the flight code for Karachi to Lahore on 2026-08-18. Return only the code.",
+  "final_answer": "PK18B2",
+  "success": true,
+  "checker_details": "Expected 'PK18B2' inside answer, got 'PK18B2'",
+  "time_taken": 30.64601159095764,
+  "timestamp": "2026-08-15T14:02:09.246830"
+}

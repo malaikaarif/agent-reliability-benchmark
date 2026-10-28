@@ -1,0 +1,12 @@
+{
+  "run_id": "t18_langgraph_r1_20260812_130639",
+  "task_id": "t18",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Use fake_file_reader to read 'budget.txt'. Extract the remaining budget number. Return only the number.",
+  "final_answer": "55000",
+  "success": true,
+  "checker_details": "Expected '55000' inside answer, got '55000'",
+  "time_taken": 36.31976532936096,
+  "timestamp": "2026-08-12T13:06:39.848170"
+}

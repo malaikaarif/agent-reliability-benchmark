@@ -1,0 +1,9 @@
+{
+  "task_id": "t24",
+  "success": true,
+  "final_answer": "Hina",
+  "checker_details": "Expected 'Hina', got 'Hina'",
+  "time_taken": 123.23766255378723,
+  "framework": "langgraph",
+  "repeat": 1
+}
