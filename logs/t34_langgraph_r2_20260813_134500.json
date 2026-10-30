@@ -1,0 +1,9 @@
+{
+  "task_id": "t34",
+  "success": false,
+  "final_answer": "Return only the total payroll, which is 275000.",
+  "checker_details": "Expected '275000', got 'Return only the total payroll, which is 275000.'",
+  "time_taken": 44.50914216041565,
+  "framework": "langgraph",
+  "repeat": 2
+}

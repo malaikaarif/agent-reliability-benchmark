@@ -1,0 +1,8 @@
+{
+  "task_id": "t01",
+  "success": true,
+  "final_answer": "Islamabad",
+  "checker_details": "",
+  "time_taken": 185.57306909561157,
+  "framework": "langgraph"
+}

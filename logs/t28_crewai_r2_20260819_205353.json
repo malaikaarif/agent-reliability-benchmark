@@ -1,0 +1,12 @@
+{
+  "task_id": "t28",
+  "success": true,
+  "final_answer": "UAE12A",
+  "checker_details": "",
+  "time_taken": 99.39088892936707,
+  "framework": "crewai",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

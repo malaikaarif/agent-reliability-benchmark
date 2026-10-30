@@ -1,0 +1,12 @@
+{
+  "task_id": "t06",
+  "success": true,
+  "final_answer": "The total value of all stock is 6500 PKR. The remaining budget is 55000 PKR.\n\nSince 6500 is less than 55000, the answer is 'YES'.",
+  "checker_details": "",
+  "time_taken": 140.75013875961304,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

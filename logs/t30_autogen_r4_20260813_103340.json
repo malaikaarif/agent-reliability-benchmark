@@ -1,0 +1,12 @@
+{
+  "run_id": "t30_autogen_r4_20260813_103340",
+  "task_id": "t30",
+  "framework": "autogen",
+  "repeat": 4,
+  "instruction": "Step 1: Use fake_search to find the price of flight PK05X9. Step 2: Use fake_calculator to calculate the cost for 2 tickets. Step 3: Return only the total cost.",
+  "final_answer": "30000",
+  "success": true,
+  "checker_details": "Expected '30000', got '30000'",
+  "time_taken": 24.323465824127197,
+  "timestamp": "2026-08-13T10:33:40.793298"
+}

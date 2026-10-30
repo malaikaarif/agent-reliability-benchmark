@@ -1,0 +1,9 @@
+{
+  "task_id": "t43",
+  "success": false,
+  "final_answer": "Ali, Sara, Zain, Noor",
+  "checker_details": "Expected 'Ali,Sara,Zain,Noor' inside answer, got 'Ali, Sara, Zain, Noor'",
+  "time_taken": 18.27428126335144,
+  "framework": "langgraph",
+  "repeat": 2
+}

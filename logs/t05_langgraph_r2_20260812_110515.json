@@ -1,0 +1,12 @@
+{
+  "run_id": "t05_langgraph_r2_20260812_110515",
+  "task_id": "t05",
+  "framework": "langgraph",
+  "repeat": 2,
+  "instruction": "Step 1: Use fake_search to find the height of Everest. Step 2: Use fake_search to find the height of K2. Step 3: Use fake_calculator to subtract K2's height from Everest's height. Return only the difference in meters as a number.",
+  "final_answer": "1652",
+  "success": false,
+  "checker_details": "Expected '237' inside answer, got '1652'",
+  "time_taken": 47.55392003059387,
+  "timestamp": "2026-08-12T11:05:15.897517"
+}

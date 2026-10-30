@@ -1,0 +1,9 @@
+{
+  "task_id": "t16",
+  "success": false,
+  "final_answer": "PIJ",
+  "checker_details": "Expected 'IPT', got 'PIJ'",
+  "time_taken": 34.75886011123657,
+  "framework": "langgraph",
+  "repeat": 2
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "t01",
+  "success": false,
+  "final_answer": "",
+  "checker_details": "Error: No module named 'crewai'",
+  "time_taken": 0,
+  "framework": "crewai",
+  "repeat": 1
+}

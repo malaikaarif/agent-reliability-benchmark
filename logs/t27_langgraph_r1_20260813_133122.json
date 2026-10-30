@@ -1,0 +1,9 @@
+{
+  "task_id": "t27",
+  "success": false,
+  "final_answer": "Check if the price is under 55000 PKR.",
+  "checker_details": "Expected 'YES', got 'Check if the price is under 55000 PKR.'",
+  "time_taken": 67.7033371925354,
+  "framework": "langgraph",
+  "repeat": 1
+}

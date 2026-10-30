@@ -1,0 +1,12 @@
+{
+  "task_id": "t12",
+  "success": true,
+  "final_answer": "Japanese Yen",
+  "checker_details": "",
+  "time_taken": 56.37862586975098,
+  "framework": "crewai",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

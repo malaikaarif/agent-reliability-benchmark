@@ -1,0 +1,12 @@
+{
+  "task_id": "t06",
+  "success": true,
+  "final_answer": "{\"name\": \"fake_calculator\", \"arguments\": {\"expression\":\"YES\"}}",
+  "checker_details": "",
+  "time_taken": 158.60227847099304,
+  "framework": "crewai",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

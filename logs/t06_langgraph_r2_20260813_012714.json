@@ -1,0 +1,9 @@
+{
+  "task_id": "t06",
+  "success": false,
+  "final_answer": "The total value of all stock is 6500 PKR and the remaining budget is 55000 PKR.\n\nTo determine if the total stock value fits in the remaining budget, we compare 6500 with 55000. Since 6500 is less than 55000, the answer is 'YES'.\n\nReturn: YES",
+  "checker_details": "Expected 'YES', got 'The total value of all stock is 6500 PKR and the remaining budget is 55000 PKR.\n\nTo determine if the total stock value fits in the remaining budget, we compare 6500 with 55000. Since 6500 is less than 55000, the answer is 'YES'.\n\nReturn: YES'",
+  "time_taken": 70.66344857215881,
+  "framework": "langgraph",
+  "repeat": 2
+}
