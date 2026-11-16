@@ -7,6 +7,6 @@
     "fake_search",
     "fake_booking_api"
   ],
-  "expected": "PK18B2",
+    "expected": "PK05X9",
   "checker": "exact_match"
 }
