@@ -1,3 +1,6 @@
+# WARNING: DO NOT RUN. This script REWRITES "success" and "checker_details"
+# inside the log files, using whatever checker is current.
+# Never rewrite logs. Rescore from final_answer with rescore.py instead.
 import json
 import glob
 import os

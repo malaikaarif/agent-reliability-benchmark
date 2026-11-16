@@ -1,0 +1,12 @@
+{
+  "run_id": "t41_langgraph_r5_20260812_220153",
+  "task_id": "t41",
+  "framework": "langgraph",
+  "repeat": 5,
+  "instruction": "Writer Agent: Write 'AI agents are useful'. Reviewer Agent: Check that the text contains 'AI'. If yes, return the text. If no, return 'REJECTED'. Return only the final result.",
+  "final_answer": "AI agents are useful",
+  "success": true,
+  "checker_details": "Expected 'AI agents are useful', got 'AI agents are useful'",
+  "time_taken": 43.72560954093933,
+  "timestamp": "2026-08-12T22:01:53.670920"
+}

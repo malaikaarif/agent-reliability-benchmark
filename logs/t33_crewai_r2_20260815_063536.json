@@ -1,0 +1,12 @@
+{
+  "run_id": "t33_crewai_r2_20260815_063536",
+  "task_id": "t33",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Use fake_calculator to compute 15 percent of 200. Return only the final number.",
+  "final_answer": "30",
+  "success": true,
+  "checker_details": "Expected '30', got '30'",
+  "time_taken": 48.11603331565857,
+  "timestamp": "2026-08-15T06:35:36.457105"
+}

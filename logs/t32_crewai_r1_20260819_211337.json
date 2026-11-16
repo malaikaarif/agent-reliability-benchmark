@@ -1,0 +1,12 @@
+{
+  "task_id": "t32",
+  "success": true,
+  "final_answer": "275",
+  "checker_details": "",
+  "time_taken": 108.57518196105957,
+  "framework": "crewai",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

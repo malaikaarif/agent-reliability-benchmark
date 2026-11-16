@@ -1,0 +1,12 @@
+{
+  "run_id": "t07_crewai_r1_20260815_130549",
+  "task_id": "t07",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_file_reader to read 'grades.csv'. Step 2: Use fake_calculator to find the average math score. Step 3: Use fake_calculator to find the average science score. Step 4: Return the name of the subject with the higher average (math or science).",
+  "final_answer": "science",
+  "success": true,
+  "checker_details": "Expected 'science', got 'science'",
+  "time_taken": 127.91561698913574,
+  "timestamp": "2026-08-15T13:05:49.241348"
+}

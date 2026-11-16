@@ -1,0 +1,12 @@
+{
+  "run_id": "t01_autogen_r1_20260813_090117",
+  "task_id": "t01",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the capital of Pakistan. Return only the city name.",
+  "final_answer": "Islamabad",
+  "success": true,
+  "checker_details": "Expected 'Islamabad' inside answer, got 'Islamabad'",
+  "time_taken": 80.80364966392517,
+  "timestamp": "2026-08-13T09:01:17.631348"
+}

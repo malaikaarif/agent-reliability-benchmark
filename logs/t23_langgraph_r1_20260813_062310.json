@@ -1,0 +1,9 @@
+{
+  "task_id": "t23",
+  "success": false,
+  "final_answer": "",
+  "checker_details": "Expected '2', got ''",
+  "time_taken": 122.13273620605469,
+  "framework": "langgraph",
+  "repeat": 1
+}

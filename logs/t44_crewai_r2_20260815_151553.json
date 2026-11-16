@@ -1,0 +1,12 @@
+{
+  "run_id": "t44_crewai_r2_20260815_151553",
+  "task_id": "t44",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Writer Agent: Calculate 100 plus 200. Reviewer Agent: Verify the answer is 300. If correct, return '300'. If wrong, return 'REJECTED'. Return only the final result.",
+  "final_answer": "300",
+  "success": true,
+  "checker_details": "Expected '300', got '300'",
+  "time_taken": 39.724236249923706,
+  "timestamp": "2026-08-15T15:15:53.831416"
+}

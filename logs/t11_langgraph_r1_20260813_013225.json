@@ -1,0 +1,9 @@
+{
+  "task_id": "t11",
+  "success": true,
+  "final_answer": "Paris",
+  "checker_details": "Expected 'Paris' inside answer, got 'Paris'",
+  "time_taken": 247.9208323955536,
+  "framework": "langgraph",
+  "repeat": 1
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "t27_crewai_r1_20260815_140437",
+  "task_id": "t27",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find the cheapest flight. Step 2: Use fake_booking_api to book that flight. Step 3: Check if the price is under 55000. Return 'YES' if under budget, else 'NO'.",
+  "final_answer": "NO",
+  "success": false,
+  "checker_details": "Expected 'YES', got 'NO'",
+  "time_taken": 138.17432260513306,
+  "timestamp": "2026-08-15T14:04:37.040503"
+}

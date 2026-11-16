@@ -1,0 +1,12 @@
+{
+  "run_id": "t04_crewai_r2_20260812_110135",
+  "task_id": "t04",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Use fake_calculator to compute (150 * 23) + 47. Return only the final number.",
+  "final_answer": "3497",
+  "success": true,
+  "checker_details": "Expected '3497' inside answer, got '3497'",
+  "time_taken": 40.68741512298584,
+  "timestamp": "2026-08-12T11:01:35.849889"
+}

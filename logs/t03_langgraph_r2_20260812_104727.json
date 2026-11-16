@@ -1,0 +1,12 @@
+{
+  "run_id": "t03_langgraph_r2_20260812_104727",
+  "task_id": "t03",
+  "framework": "langgraph",
+  "repeat": 2,
+  "instruction": "Use fake_search to find the flight code for Lahore to Karachi on 2026-08-15. Then use fake_booking_api to book it. Return only the confirmation message.",
+  "final_answer": "Confirmation message for booking flight PK05X9: Booking confirmed for flight PK05X9. Price: 15000 PKR.",
+  "success": true,
+  "checker_details": "Expected 'Booking confirmed for flight PK05X9. Price: 15000 PKR.' inside answer, got 'Confirmation message for booking flight PK05X9: Booking confirmed for flight PK05X9. Price: 15000 PKR.'",
+  "time_taken": 40.24409747123718,
+  "timestamp": "2026-08-12T10:47:27.567239"
+}

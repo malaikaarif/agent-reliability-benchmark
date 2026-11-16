@@ -1,0 +1,12 @@
+{
+  "run_id": "t05_autogen_r1_20260813_091558",
+  "task_id": "t05",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find the height of Everest. Step 2: Use fake_search to find the height of K2. Step 3: Use fake_calculator to subtract K2's height from Everest's height. Return only the difference in meters as a number.",
+  "final_answer": "778",
+  "success": false,
+  "checker_details": "Expected '237' inside answer, got '778'",
+  "time_taken": 70.81904745101929,
+  "timestamp": "2026-08-13T09:15:58.879820"
+}

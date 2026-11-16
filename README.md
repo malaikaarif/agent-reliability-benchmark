@@ -850,3 +850,11 @@ We thank the **Department of Computer Science at COMSATS University Islamabad, S
 <sub>Built with ❤️ at COMSATS University Islamabad, Sahiwal Campus</sub>
 
 </div>
+
+
+
+## Warning: log files
+Never run `fix_logs.py`. It rewrites `success` and `checker_details` inside
+the log files. Logs are raw data and stay unchanged. To score runs, use
+`python rescore.py`, which reads `final_answer` and prints results without
+changing any file.

@@ -1,0 +1,12 @@
+{
+  "run_id": "t21_langgraph_r1_20260812_133232",
+  "task_id": "t21",
+  "framework": "langgraph",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_file_reader to read 'products.csv'. Step 2: Use fake_calculator to calculate total stock value (price multiplied by stock for each item, then sum all). Return only the total.",
+  "final_answer": "6500",
+  "success": true,
+  "checker_details": "Expected '6500', got '6500'",
+  "time_taken": 42.88310480117798,
+  "timestamp": "2026-08-12T13:32:32.202390"
+}

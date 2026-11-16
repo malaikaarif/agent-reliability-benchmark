@@ -1,0 +1,12 @@
+{
+  "task_id": "t26",
+  "success": true,
+  "final_answer": "PK18B2",
+  "checker_details": "",
+  "time_taken": 20.067248106002808,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}
