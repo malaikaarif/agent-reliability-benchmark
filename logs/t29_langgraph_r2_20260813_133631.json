@@ -1,0 +1,9 @@
+{
+  "task_id": "t29",
+  "success": false,
+  "final_answer": "\"PK05X9, 15000 PKR, YES\"",
+  "checker_details": "Expected 'PK18B2, 12000, YES' inside answer, got '\"PK05X9, 15000 PKR, YES\"'",
+  "time_taken": 38.77833890914917,
+  "framework": "langgraph",
+  "repeat": 2
+}

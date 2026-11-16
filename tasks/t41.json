@@ -7,5 +7,8 @@
     "fake_file_reader"
   ],
   "expected": "AI agents are useful",
-  "checker": "exact_match"
+  "checker": "exact_match",
+  "forbidden": [
+    "REJECTED"
+  ]
 }

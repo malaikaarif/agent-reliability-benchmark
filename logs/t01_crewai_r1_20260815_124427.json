@@ -1,0 +1,12 @@
+{
+  "run_id": "t01_crewai_r1_20260815_124427",
+  "task_id": "t01",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the capital of Pakistan. Return only the city name.",
+  "final_answer": "Islamabad",
+  "success": true,
+  "checker_details": "Expected 'Islamabad' inside answer, got 'Islamabad'",
+  "time_taken": 249.35891318321228,
+  "timestamp": "2026-08-15T12:44:27.415321"
+}

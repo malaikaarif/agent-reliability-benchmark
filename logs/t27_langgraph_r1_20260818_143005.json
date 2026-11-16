@@ -1,0 +1,12 @@
+{
+  "task_id": "t27",
+  "success": true,
+  "final_answer": "Check if the price is under 55000 PKR.",
+  "checker_details": "",
+  "time_taken": 60.62542963027954,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

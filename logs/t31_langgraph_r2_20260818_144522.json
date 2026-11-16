@@ -1,0 +1,12 @@
+{
+  "task_id": "t31",
+  "success": true,
+  "final_answer": "Since no flights were found under 20000 PKR, we cannot proceed with booking a flight. However, if there were results, the process would be as follows:\n\n1. Use `fake_search_tool` to find all flights under 20000 PKR.\n2. Pick the first one found.\n3. Use `fake_booking_api_tool` with the exact flight code from step 2.\n4. Return only the flight code.\n\nGiven that no results were found, there is no flight code to return.",
+  "checker_details": "",
+  "time_taken": 55.36162066459656,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

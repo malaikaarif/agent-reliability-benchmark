@@ -1,0 +1,12 @@
+{
+  "run_id": "t17_langgraph_r3_20260812_125511",
+  "task_id": "t17",
+  "framework": "langgraph",
+  "repeat": 3,
+  "instruction": "Step 1: Use fake_search to find flights from Lahore. Step 2: Count how many flights are found. Step 3: Use fake_search to find flights to Lahore. Step 4: Count how many flights are found. Step 5: Use fake_calculator to add both counts. Return only the total number.",
+  "final_answer": "5",
+  "success": false,
+  "checker_details": "Expected '2', got '5'",
+  "time_taken": 60.942469120025635,
+  "timestamp": "2026-08-12T12:55:11.441741"
+}

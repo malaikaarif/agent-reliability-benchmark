@@ -1,0 +1,9 @@
+{
+  "task_id": "t14",
+  "success": true,
+  "final_answer": "Berlin, Paris, Tokyo",
+  "checker_details": "Expected 'Berlin, Paris, Tokyo', got 'Berlin, Paris, Tokyo'",
+  "time_taken": 37.334367513656616,
+  "framework": "langgraph",
+  "repeat": 2
+}

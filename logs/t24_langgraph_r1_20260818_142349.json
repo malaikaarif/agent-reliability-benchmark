@@ -1,0 +1,12 @@
+{
+  "task_id": "t24",
+  "success": true,
+  "final_answer": "Hina",
+  "checker_details": "",
+  "time_taken": 124.44263434410095,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

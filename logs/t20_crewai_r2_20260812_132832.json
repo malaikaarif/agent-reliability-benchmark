@@ -1,0 +1,12 @@
+{
+  "run_id": "t20_crewai_r2_20260812_132832",
+  "task_id": "t20",
+  "framework": "crewai",
+  "repeat": 2,
+  "instruction": "Step 1: Use fake_file_reader to read 'employees.csv'. Step 2: Use fake_calculator to find the average salary. Step 3: Return only the average as a number.",
+  "final_answer": "68750",
+  "success": true,
+  "checker_details": "Expected '68750', got '68750'",
+  "time_taken": 71.68166375160217,
+  "timestamp": "2026-08-12T13:28:32.340366"
+}

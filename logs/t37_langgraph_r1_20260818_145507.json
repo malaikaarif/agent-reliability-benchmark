@@ -1,0 +1,12 @@
+{
+  "task_id": "t37",
+  "success": true,
+  "final_answer": "The lowest price per unit is for the Mouse with a value of 0.4.\n\nNow, I will calculate the price per unit for each product:\n\n- Laptop: \\( \\frac{800}{5} = 160 \\)\n- Mouse: \\( \\frac{20}{50} = 0.4 \\)\n- Keyboard: \\( \\frac{50}{30} \\approx 1.67 \\)\n\nThe product with the lowest price per unit is the Mouse.\n\nReturn only the product name:\n\"Mouse\"",
+  "checker_details": "",
+  "time_taken": 164.75921320915222,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

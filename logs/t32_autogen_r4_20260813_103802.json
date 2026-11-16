@@ -1,0 +1,12 @@
+{
+  "run_id": "t32_autogen_r4_20260813_103802",
+  "task_id": "t32",
+  "framework": "autogen",
+  "repeat": 4,
+  "instruction": "Use fake_calculator to compute 1000 divided by 4 plus 25. Return only the final number.",
+  "final_answer": "275",
+  "success": true,
+  "checker_details": "Expected '275' inside answer, got '275'",
+  "time_taken": 13.736381530761719,
+  "timestamp": "2026-08-13T10:38:02.146508"
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "t42_crewai_r1_20260812_193703",
+  "task_id": "t42",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Writer Agent: Return exactly this 3-word summary: Capital is Islamabad. Reviewer Agent: Count the words. If exactly 3, return exactly 'Capital is Islamabad'. If not, return 'REJECTED'. Return only the final result.",
+  "final_answer": "REJECTED",
+  "success": false,
+  "checker_details": "Expected 'Capital is Islamabad', got 'REJECTED'",
+  "time_taken": 155.49422001838684,
+  "timestamp": "2026-08-12T19:37:03.832588"
+}

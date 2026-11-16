@@ -1,0 +1,12 @@
+{
+  "task_id": "t37",
+  "success": false,
+  "final_answer": "[ARW_FALLBACK] No valid response after retries \u2014 routed to fallback instead of crashing/terminating silently. (context: crewai_task_t37) (last_error: TimeoutError: crew.kickoff() exceeded 90s for task t37)",
+  "checker_details": "ARW_FALLBACK: all retries exhausted",
+  "time_taken": 364.29953932762146,
+  "framework": "crewai",
+  "repeat": 1,
+  "arw_retries": 4,
+  "arw_crashed_before_arw": true,
+  "arw_used_fallback": true
+}

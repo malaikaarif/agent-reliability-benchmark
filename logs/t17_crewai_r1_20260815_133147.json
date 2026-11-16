@@ -1,0 +1,12 @@
+{
+  "run_id": "t17_crewai_r1_20260815_133147",
+  "task_id": "t17",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Step 1: Use fake_search to find flights from Lahore. Step 2: Count how many flights are found. Step 3: Use fake_search to find flights to Lahore. Step 4: Count how many flights are found. Step 5: Use fake_calculator to add both counts. Return only the total number.",
+  "final_answer": "3",
+  "success": false,
+  "checker_details": "Expected '2', got '3'",
+  "time_taken": 151.73383903503418,
+  "timestamp": "2026-08-15T13:31:47.047342"
+}

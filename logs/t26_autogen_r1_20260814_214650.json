@@ -1,0 +1,12 @@
+{
+  "run_id": "t26_autogen_r1_20260814_214650",
+  "task_id": "t26",
+  "framework": "autogen",
+  "repeat": 1,
+  "instruction": "Use fake_search to find the flight code for Karachi to Lahore on 2026-08-18. Return only the code.",
+  "final_answer": "PK18B2",
+  "success": true,
+  "checker_details": "Expected 'PK18B2' inside answer, got 'PK18B2'",
+  "time_taken": 65.47352290153503,
+  "timestamp": "2026-08-14T21:46:50.602142"
+}

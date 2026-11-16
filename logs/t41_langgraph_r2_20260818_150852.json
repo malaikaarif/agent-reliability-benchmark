@@ -1,0 +1,12 @@
+{
+  "task_id": "t41",
+  "success": true,
+  "final_answer": "\"AI agents are useful\" contains 'AI', so the result is:\n\nAI agents are useful",
+  "checker_details": "",
+  "time_taken": 9.642414808273315,
+  "framework": "langgraph",
+  "repeat": 2,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

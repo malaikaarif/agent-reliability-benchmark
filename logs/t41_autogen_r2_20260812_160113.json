@@ -1,0 +1,12 @@
+{
+  "run_id": "t41_autogen_r2_20260812_160113",
+  "task_id": "t41",
+  "framework": "autogen",
+  "repeat": 2,
+  "instruction": "Writer Agent: Write 'AI agents are useful'. Reviewer Agent: Check that the text contains 'AI'. If yes, return the text. If no, return 'REJECTED'. Return only the final result.",
+  "final_answer": "AI agents are useful REJECTED",
+  "success": false,
+  "checker_details": "Expected 'AI agents are useful', got 'AI agents are useful REJECTED'",
+  "time_taken": 3.947852373123169,
+  "timestamp": "2026-08-12T16:01:13.949664"
+}

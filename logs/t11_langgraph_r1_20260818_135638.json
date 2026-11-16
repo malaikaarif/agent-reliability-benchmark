@@ -1,0 +1,12 @@
+{
+  "task_id": "t11",
+  "success": true,
+  "final_answer": "Paris",
+  "checker_details": "",
+  "time_taken": 27.078860759735107,
+  "framework": "langgraph",
+  "repeat": 1,
+  "arw_retries": 0,
+  "arw_crashed_before_arw": false,
+  "arw_used_fallback": false
+}

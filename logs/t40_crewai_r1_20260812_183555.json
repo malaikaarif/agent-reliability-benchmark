@@ -1,0 +1,12 @@
+{
+  "run_id": "t40_crewai_r1_20260812_183555",
+  "task_id": "t40",
+  "framework": "crewai",
+  "repeat": 1,
+  "instruction": "Writer Agent: Write a 5-word sentence about Pakistan. Reviewer Agent: Count the words. If exactly 5, return the sentence. If not, return 'REJECTED'. Return only the final result.",
+  "final_answer": "REJECTED",
+  "success": false,
+  "checker_details": "Expected 'Pakistan is a beautiful country' inside answer, got 'REJECTED'",
+  "time_taken": 155.125004529953,
+  "timestamp": "2026-08-12T18:35:55.463199"
+}
